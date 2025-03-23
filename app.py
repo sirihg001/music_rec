@@ -4,11 +4,11 @@ from spotipy.oauth2 import SpotifyClientCredentials
 from flask import Flask, render_template, request, redirect, url_for
 
 # Google Gemini API setup
-API_KEY= "AIzaSyD9YyUfngDpj8kTBBQU-x-sQKEv-hfkd7c"
+API_KEY= "...."
 # Spotify API setup
 genai.configure(api_key=API_KEY)
-SPOTIFY_CLIENT_ID = "c3b5b5fe13ab44938d447811c65c97f9"
-SPOTIFY_CLIENT_SECRET = "dec09afc691747c3affb34d548b42cc3"
+SPOTIFY_CLIENT_ID = "...."
+SPOTIFY_CLIENT_SECRET = "...."
 sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id=SPOTIFY_CLIENT_ID, client_secret=SPOTIFY_CLIENT_SECRET))
 
 # Initialize Flask app
