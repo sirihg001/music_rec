@@ -1,0 +1,88 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Mood Recommender</title>
+</head>
+<body>
+    <h1>Find Music Based on Your Mood!</h1>
+    <form method="POST">
+        <textarea name="userText" rows="4" cols="50" placeholder="Describe your mood..."></textarea>
+        <br><br>
+
+        Genre: <input type="text" name="genre" placeholder="e.g. Happy, sad, relaxed">
+        <br><br>
+
+        Artist: <input type="text" name="artist" placeholder="e.g. Rihanna">
+        <br><br>
+
+        <button type="submit">Get Music Recommendations</button>
+    </form>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Mood Recommender</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 350px;
+        }
+        h1 {
+            font-size: 22px;
+            color: #333;
+        }
+        textarea, input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        button {
+            background: #ff4081;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            background: #e6005c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Find Music Based on Your Mood!</h1>
+        <form method="POST">
+            <textarea name="userText" rows="4" placeholder="Describe your mood..."></textarea>
+            <input type="text" name="genre" placeholder="Genre: e.g. Happy, sad, relaxed">
+            <input type="text" name="artist" placeholder="Artist: e.g. Rihanna">
+            <button type="submit">Get Music Recommendations</button>
+        </form>
+    </div>
+</body>
+</html>
+
